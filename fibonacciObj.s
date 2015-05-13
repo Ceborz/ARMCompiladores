@@ -13,6 +13,11 @@ fibonacci_0:
 	pop {R4}
 	STR R4, [R11, #0]
 	push {lr}
+
+	LDR R0, =_formatoInt
+	MOV R1, R4
+	BL printf
+	
 	LDR R4, [R11, #0]
 	MOV R5, #2
 	CMP R4, R5
