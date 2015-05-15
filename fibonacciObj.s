@@ -117,7 +117,7 @@ main_0:
 	STR R5, [R11, #0]
 	STR R4, [R11, #0]
 
-	MOV R0, =_formatoInt
+	LDR R0, =_formatoInt
 	MOV R1, R4	
 	BL printf
 
