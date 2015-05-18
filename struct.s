@@ -46,6 +46,10 @@ main_0:
 	MOV R4, #7
 	STR R4, [R11, #8]
 	LDR R4, [R11, #12]
+	LDR R0, =_formatoInt
+	MOV R1, R4
+	BL printf
+	LDR R4, [R11, #12]
 	MOV R5, #1
 	ADD R4, R4, R5
 	STR R4, [R11, #0]
