@@ -48,18 +48,18 @@ main_0:
 	LDR R4, [R11, #40]
 	MOV R5, #3
 	CMP R5, #0
-	BLT IndexOutOfBounds
+	BLT _IndexOutOfBounds
 	CMP R5, #10
-	BGE IndexOutOfBounds
+	BGE _IndexOutOfBounds
 	MOV R6, #4
 	MUL R5, R5, R6
 	ADD R5, R5, #0
 	STR R4, [R11, R5]
 	MOV R4, #3
 	CMP R4, #0
-	BLT IndexOutOfBounds
+	BLT _IndexOutOfBounds
 	CMP R4, #10
-	BGE IndexOutOfBounds
+	BGE _IndexOutOfBounds
 	MOV R5, #4
 	MUL R4, R4, R5
 	ADD R4, R4, #0
