@@ -116,11 +116,10 @@ main_0:
 	pop {R5}
 	STR R5, [R11, #0]
 	STR R4, [R11, #0]
-
+	LDR R4, [R11, #0]
 	LDR R0, =_formatoInt
-	MOV R1, R4	
+	MOV R1, R4
 	BL printf
-
 	pop {pc}
 
 _IndexOutOfBounds:
@@ -139,6 +138,8 @@ _IOOB:
 	.asciz "El indice no esta dentro del rango del arreglo "
 _formatoInt:
 	.asciz "%d\n"
+_formatoChar:
+	.asciz "%c\n"
 _dataGlobal:
 	.space 12
 
