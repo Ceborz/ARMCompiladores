@@ -44,7 +44,7 @@ divideU32Return$:
 main_0:
 	push {lr}
 	MOV R4, #7
-	STR R4, [R11, #8]
+	STR R4, [R11, #12]
 	LDR R4, [R11, #12]
 	LDR R0, =_formatoInt
 	MOV R1, R4
