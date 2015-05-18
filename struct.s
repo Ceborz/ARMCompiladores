@@ -74,5 +74,5 @@ _formatoInt:
 _formatoChar:
 	.asciz "%c\n"
 _dataGlobal:
-	.space 4
+	.space 16
 
