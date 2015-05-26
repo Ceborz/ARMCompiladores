@@ -48,6 +48,10 @@ ackermann_0:
 	STR R4, [R11, #4]
 	push {lr}
 	LDR R4, [R11, #0]
+	LDR R0, =_formatoInt
+	MOV R1, R4
+	BL printf
+	LDR R4, [R11, #0]
 	MOV R5, #0
 	CMP R4, R5
 	BEQ _condExpTrue_0
