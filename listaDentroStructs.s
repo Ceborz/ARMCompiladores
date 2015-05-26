@@ -43,70 +43,49 @@ divideU32Return$:
 
 main_0:
 	push {lr}
-	MOV R4, #4
-	MOV R5, #1
-	CMP R5, #0
-	BLT _IndexOutOfBounds
-	CMP R5, #5
-	BGE _IndexOutOfBounds
-	MOV R6, #104
-	MUL R5, R6, R5
-	MOV R6, #8
-	ADD R5, R5, R6
-	MOV R6, #2
-	CMP R6, #0
-	BLT _IndexOutOfBounds
-	CMP R6, #4
-	BGE _IndexOutOfBounds
-	MOV R7, #24
-	MUL R6, R7, R6
-	ADD R5, R5, R6
-	MOV R6, #4
-	ADD R5, R5, R6
-	MOV R6, #0
-	CMP R6, #0
-	BLT _IndexOutOfBounds
-	CMP R6, #2
-	BGE _IndexOutOfBounds
-	MOV R7, #8
-	MUL R6, R7, R6
-	ADD R5, R5, R6
-	ADD R5, R5, #8
-	STR R4, [R11, R5]
-	MOV R4, #1
-	CMP R4, #0
-	BLT _IndexOutOfBounds
-	CMP R4, #5
-	BGE _IndexOutOfBounds
-	MOV R5, #104
-	MUL R4, R5, R4
-	MOV R5, #8
-	ADD R4, R4, R5
+	MOV R4, #8
 	MOV R5, #2
 	CMP R5, #0
 	BLT _IndexOutOfBounds
 	CMP R5, #4
 	BGE _IndexOutOfBounds
-	MOV R6, #24
+	MOV R6, #4
 	MUL R5, R6, R5
-	ADD R4, R4, R5
-	MOV R5, #4
-	ADD R4, R4, R5
-	MOV R5, #0
-	CMP R5, #0
+	ADD R5, R5, #44
+	STR R4, [R11, R5]
+	MOV R4, #2
+	CMP R4, #0
 	BLT _IndexOutOfBounds
-	CMP R5, #2
+	CMP R4, #4
 	BGE _IndexOutOfBounds
-	MOV R6, #8
-	MUL R5, R6, R5
-	ADD R4, R4, R5
-	ADD R4, R4, #8
+	MOV R5, #4
+	MUL R4, R5, R4
+	ADD R4, R4, #44
 	LDR R4, [R11, R4]
 
-	MOV R5, #4
+	MOV R5, #5
+	MOV R6, #6
+	MUL R5, R6, R5
 	ADD R4, R4, R5
-	STR R4, [R11, #0]
-	LDR R4, [R11, #0]
+	MOV R5, #3
+	CMP R5, #0
+	BLT _IndexOutOfBounds
+	CMP R5, #10
+	BGE _IndexOutOfBounds
+	MOV R6, #4
+	MUL R5, R6, R5
+	ADD R5, R5, #0
+	STR R4, [R11, R5]
+	MOV R4, #3
+	CMP R4, #0
+	BLT _IndexOutOfBounds
+	CMP R4, #10
+	BGE _IndexOutOfBounds
+	MOV R5, #4
+	MUL R4, R5, R4
+	ADD R4, R4, #0
+	LDR R4, [R11, R4]
+
 	LDR R0, =_formatoInt
 	MOV R1, R4
 	BL printf
@@ -131,5 +110,5 @@ _formatoInt:
 _formatoChar:
 	.asciz "%c\n"
 _dataGlobal:
-	.space 524
+	.space 68
 
