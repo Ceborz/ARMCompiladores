@@ -50,7 +50,7 @@ main_0:
 	CMP R5, #4
 	BGE _IndexOutOfBounds
 	MOV R6, #4
-	MUL R5, R5, R6
+	MUL R5, R6, R5
 	ADD R5, R5, #44
 	STR R4, [R11, R5]
 	MOV R4, #2
@@ -59,7 +59,7 @@ main_0:
 	CMP R4, #4
 	BGE _IndexOutOfBounds
 	MOV R5, #4
-	MUL R4, R4, R5
+	MUL R4, R5, R4
 	ADD R4, R4, #44
 	LDR R4, [R11, R4]
 
@@ -73,7 +73,7 @@ main_0:
 	CMP R5, #10
 	BGE _IndexOutOfBounds
 	MOV R6, #4
-	MUL R5, R5, R6
+	MUL R5, R6, R5
 	ADD R5, R5, #0
 	STR R4, [R11, R5]
 	MOV R4, #3
@@ -82,7 +82,7 @@ main_0:
 	CMP R4, #10
 	BGE _IndexOutOfBounds
 	MOV R5, #4
-	MUL R4, R4, R5
+	MUL R4, R5, R4
 	ADD R4, R4, #0
 	LDR R4, [R11, R4]
 
