@@ -65,7 +65,7 @@ main_0:
 
 	MOV R5, #5
 	MOV R6, #6
-	MUL R5, R5, R6
+	MUL R5, R6, R5
 	ADD R4, R4, R5
 	MOV R5, #3
 	CMP R5, #0
