@@ -51,7 +51,7 @@ main_0:
 	BGE _IndexOutOfBounds
 	MOV R6, #4
 	MUL R5, R5, R6
-	ADD R5, R5, #4
+	ADD R5, R5, #44
 	STR R4, [R11, R5]
 	MOV R4, #2
 	CMP R4, #0
