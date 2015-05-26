@@ -144,9 +144,9 @@ _condExpFalse_1:
 
 main_0:
 	push {lr}
-	MOV R4, #3
+	MOV R4, #2
 	STR R4, [R11, #4]
-	MOV R4, #3
+	MOV R4, #2
 	STR R4, [R11, #8]
 	LDR R4, [R11, #0]
 	push {R4}
