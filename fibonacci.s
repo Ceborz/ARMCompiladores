@@ -107,6 +107,8 @@ _condExpFalse_0:
 
 main_0:
 	push {lr}
+	MOV R4, #0
+	STR R4, [R11, #0]
 
 _condWhile_0:
 	LDR R4, [R11, #0]
@@ -118,12 +120,18 @@ _condWhile_0:
 _condExpTrue_1:
 	LDR R4, [R11, #0]
 	push {R4}
+	LDR R4, [R11, #4]
+	push {R4}
 	LDR R4, [R11, #0]
 	push {R4}
 	BL fibonacci_0
 	pop {R4}
 	pop {R5}
+	STR R5, [R11, #4]
+	pop {R5}
 	STR R5, [R11, #0]
+	STR R4, [R11, #4]
+	LDR R4, [R11, #4]
 	LDR R0, =_formatoInt
 	MOV R1, R4
 	BL printf
