@@ -109,7 +109,7 @@ main_0:
 	push {lr}
 	LDR R4, [R11, #0]
 	push {R4}
-	MOV R4, #8
+	MOV R4, #6
 	push {R4}
 	BL fibonacci_0
 	pop {R4}
