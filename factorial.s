@@ -90,7 +90,7 @@ main_0:
 	push {lr}
 	LDR R4, [R11, #0]
 	push {R4}
-	MOV R4, #8
+	MOV R4, #5
 	push {R4}
 	BL factorial_0
 	pop {R4}
