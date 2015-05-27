@@ -131,6 +131,10 @@ _condExpTrue_1:
 	pop {R5}
 	STR R5, [R11, #0]
 	STR R4, [R11, #4]
+	LDR R4, [R11, #0]
+	MOV R5, #1
+	ADD R4, R4, R5
+	STR R4, [R11, #0]
 	LDR R4, [R11, #4]
 	LDR R0, =_formatoInt
 	MOV R1, R4
